@@ -19,8 +19,8 @@ if [ ! -f $CACHE_FILE ]; then
   CADDY_VERSION="${CADDY_VERSION:-0.10.6}"
   CADDY_FILE="caddy"
   CADDY_ARCHIVE="caddy_v${CADDY_VERSION}_linux_amd64.tar.gz"
-  #CADDY_URL="https://github.com/$CADDY_REPO/releases/download/v$CADDY_VERSION/$CADDY_ARCHIVE"
-  CADDY_URL="https://github.com/caddyserver/caddy/releases/download/v1.0.3/caddy_v1.0.3_linux_amd64.tar.gz"
+  CADDY_URL="https://github.com/$CADDY_REPO/releases/download/v$CADDY_VERSION/$CADDY_ARCHIVE"
+  #CADDY_URL="https://github.com/caddyserver/caddy/releases/download/v1.0.3/caddy_v1.0.3_linux_amd64.tar.gz"
 
   echo "-----> Downloading Caddy"
   wget $CADDY_URL -P $BUILD_DIR | indent
