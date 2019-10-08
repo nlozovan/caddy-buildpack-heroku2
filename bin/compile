@@ -15,6 +15,10 @@ CADDY_EXTRACT_DIR="$INSTALL_DIR/extract"
 
 if [ 1 ]; then
   # Install caddy
+  CADDY_REPO="caddyserver/caddy"
+  CADDY_VERSION="1.0.3"
+
+
   CADDY_REPO="${CADDY_REPO:-mholt/caddy}"
   CADDY_VERSION="${CADDY_VERSION:-0.10.6}"
   CADDY_FILE="caddy"
