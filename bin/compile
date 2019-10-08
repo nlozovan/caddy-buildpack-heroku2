@@ -13,7 +13,7 @@ INSTALL_DIR="$VENDOR_DIR/caddy"
 CACHE_FILE="$CACHE_DIR/caddy"
 CADDY_EXTRACT_DIR="$INSTALL_DIR/extract"
 
-if [ ! -f $CACHE_FILE ]; then
+if [ 1 ]; then
   # Install caddy
   CADDY_REPO="${CADDY_REPO:-mholt/caddy}"
   CADDY_VERSION="${CADDY_VERSION:-0.10.6}"
